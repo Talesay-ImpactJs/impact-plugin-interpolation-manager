@@ -1,4 +1,4 @@
-# Impact JS Interpolation Object
+# Impact JS Interpolation Manager
 
 This plugin is meant to be used as a git submodule, to add it from the git command line:
 

@@ -1,6 +1,6 @@
 /*global ig*/
 ig.module(
-    'plugins.interpolation.object'
+    'plugins.interpolation.manager'
 ).defines(function () {
     'use strict';
     ig.Interpolation = function (start, end, duration, easeFunction, callback) {
