@@ -10,12 +10,15 @@ ig.module(
         this.easeFunction = easeFunction || function (v) {
             return v;
         };
-        this.callback = callback;
+        this.callback = callback || function () {};
         this.executedCallback = false;
         this.startTime = ig.Timer.time;
         return this;
     };
-
+	ig.Interpolation.prototype.reset = function () {
+		this.executedCallback = false;
+		this.startTime = ig.Timer.time;
+	};
     ig.Interpolation.prototype.valueOf = function () {
         if (this.done) {
             return this.end;
